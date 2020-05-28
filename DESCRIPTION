@@ -1,16 +1,20 @@
 Package: MobileSensing
-Title: What the Package Does (One Line, Title Case)
-Version: 0.0.0.9000
+Title: Useful Function for Analysing Mobile Sensing Data
+Version: 0.1
 Authors@R: 
-    person(given = "First",
-           family = "Last",
+    person(given = "Koen",
+           family = "Niemeijer",
            role = c("aut", "cre"),
-           email = "first.last@example.com",
-           comment = c(ORCID = "YOUR-ORCID-ID"))
-Description: What the package does (one paragraph).
-License: `use_mit_license()`, `use_gpl3_license()` or friends to
-    pick a license
+           email = "koen.niemeijer@kuleuven.be",
+           BugReports: https://github.com/koenniem/MobileSensing/issues
+           comment = c(ORCID = "0000-0002-0816-534X"))
+Description: A collection of useful functions to analyse mobile sensing data. This package mostly contains functions that are missing from other popular packages, such as dplyr and zoo, or that can be extended/modified so that they are easier to apply.
+License: `use_gpl3_license()`
 Encoding: UTF-8
 LazyData: true
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.1.0
+Imports:
+    dplyr,
+    purrr,
+    lme4
